@@ -1,0 +1,15 @@
+body {
+  font-family: avenir next;
+}
+
+main #our-menu {
+  padding: 0;
+  margin: 0;
+  background-color: #3498DB;
+}
+main #our-menu h3 {
+  text-align: center;
+}
+main #our-menu div {
+  padding: 1em;
+}
