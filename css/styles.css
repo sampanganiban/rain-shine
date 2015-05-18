@@ -2,6 +2,10 @@ body {
   font-family: avenir next;
 }
 
+header #opening-page {
+  background-image: url("img/interior-two.jpg");
+}
+
 main #our-menu {
   padding: 0;
   margin: 0;
@@ -10,6 +14,13 @@ main #our-menu {
 main #our-menu h3 {
   text-align: center;
 }
-main #our-menu div {
-  padding: 1em;
+main #contact {
+  background-color: #222;
+  color: #eee;
+}
+
+footer {
+  background-color: #222;
+  color: #eee;
+  padding: .5em;
 }

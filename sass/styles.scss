@@ -7,9 +7,12 @@ body {
 	font-family: $font;
 }
 
+header #opening-page {
+	background-image: url('img/interior-two.jpg');
+}
+
 main {
 
-	
 	#our-menu{
 		
 		padding:0;
@@ -21,9 +24,24 @@ main {
 		}
 
 		div {
-			padding:1em;
+			// padding:1em;
 			
 		}
 	}
+
+	#contact {
+		background-color: #222;
+		color:#eee;
+	}
 	
+}
+
+footer {
+	background-color: #222;
+	color:#eee;
+	padding:.5em;
+
+	img	{
+
+	}
 }
