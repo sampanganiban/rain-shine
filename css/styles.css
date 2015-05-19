@@ -1,15 +1,32 @@
 body {
+  padding: 0;
+  margin: 0;
   font-family: avenir next;
 }
 
 header #opening-page {
-  background-image: url("img/interior-two.jpg");
+  font-family: Poiret one;
+  color: white;
+  height: 480px;
+  background-image: url("../img/interior-two.gif");
+  background-repeat: no-repeat;
+}
+header #opening-page #opening-title {
+  padding-top: 10em;
+  text-align: center;
+}
+header #opening-page h4 {
+  margin: 0;
+  padding: 0;
+}
+header #opening-page h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
 }
 
 main #our-menu {
-  padding: 0;
-  margin: 0;
-  background-color: #3498DB;
+  background-color: #3498db;
 }
 main #our-menu h3 {
   text-align: center;

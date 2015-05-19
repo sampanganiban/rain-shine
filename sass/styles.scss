@@ -1,22 +1,52 @@
 @import 'flat-ui-colors';
 
 $font:avenir next;
-
+$spacing:0;
 
 body {
+	padding:$spacing;
+	margin:$spacing;
 	font-family: $font;
 }
 
-header #opening-page {
-	background-image: url('img/interior-two.jpg');
+header {
+
+	#opening-page {
+		
+		font-family: Poiret one;
+		color:white;
+		height:480px;
+		background-image: url('../img/interior-two.gif');
+		background-repeat:no-repeat;
+
+	#opening-title {
+
+		padding-top: 10em;
+		text-align:center;
+
+	}
+
+	h4 {
+		margin:$spacing;
+		padding:$spacing;
+	}
+
+		h3 {
+
+			margin:$spacing;
+			padding:$spacing;
+			font-size:2em;
+
+		}
+
+	}
+
 }
 
 main {
 
 	#our-menu{
 		
-		padding:0;
-		margin:0;
 		background-color: $flat-peter-river;
 		
 		h3 {
