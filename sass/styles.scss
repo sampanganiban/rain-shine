@@ -1,12 +1,16 @@
 @import 'flat-ui-colors';
 
-$font:avenir next;
+$main-font:avenir next;
 $spacing:0;
+$bg-color: #222;
+$text-color: #eee;
+$mobile-height:480px;
 
 body {
 	padding:$spacing;
 	margin:$spacing;
-	font-family: $font;
+	font-family: $main-font;
+	color:$text-color;
 }
 
 header {
@@ -15,21 +19,26 @@ header {
 		
 		font-family: Poiret one;
 		color:white;
-		height:480px;
+		height:$mobile-height;
 		background-image: url('../img/interior-two.gif');
 		background-repeat:no-repeat;
 
-	#opening-title {
+		#opening-title {
 
-		padding-top: 10em;
-		text-align:center;
+			padding-top: 6.5em;
+			text-align:center;
 
-	}
+		}
 
-	h4 {
-		margin:$spacing;
-		padding:$spacing;
-	}
+		#nav-icon4 {
+
+			
+		}
+
+		h4 {
+			margin:$spacing;
+			padding:$spacing;
+		}
 
 		h3 {
 
@@ -39,6 +48,25 @@ header {
 
 		}
 
+		img {
+			// border:1px solid #f09;
+			margin:1em;
+		}
+
+	}
+
+	nav {
+
+		background-color:#ddd;
+		height:$mobile-height;
+
+		ul {
+
+		margin:$spacing;
+		padding:$spacing;
+		
+	}
+
 	}
 
 }
@@ -47,28 +75,63 @@ main {
 
 	#our-menu{
 		
-		background-color: $flat-peter-river;
+		background-color: $bg-color;
+		background-image: url('../img/dessert-two-two.jpg');
+		height:$mobile-height;
 		
 		h3 {
 			text-align:center;
 		}
 
+		p {
+			text-align: center;
+		}
+
 		div {
-			// padding:1em;
 			
 		}
+
+	}
+
+
+	h2 {
+
+		margin:$spacing;
+		padding:$spacing;
+		// border:1px solid #f09;
+
+	}
+
+	p {
+
+		margin:$spacing;
+		padding:$spacing;
+	}
+
+
+	#location {
+
+		height:$mobile-height;
+		background-color:$bg-color;
+
 	}
 
 	#contact {
-		background-color: #222;
+
+		height:$mobile-height;
+		background-color: $bg-color;
 		color:#eee;
+
+
 	}
+
+
 	
 }
 
 footer {
-	background-color: #222;
-	color:#eee;
+	background-color:$bg-color;
+	color:$text-color;
 	padding:.5em;
 
 	img	{
