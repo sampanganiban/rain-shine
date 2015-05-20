@@ -1,10 +1,13 @@
 @import 'flat-ui-colors';
+@import 'mixins';
 
 $main-font:avenir next;
 $spacing:0;
 $bg-color: #222;
 $text-color: #eee;
 $mobile-height:480px;
+$rotate: rotate;
+$origin: right center;
 
 body {
 	padding:$spacing;
@@ -32,7 +35,82 @@ header {
 
 		#nav-icon4 {
 
-			
+			width: 60px;
+  			height: 45px;
+  			position: relative;
+  			// margin: 50px auto;
+			cursor: pointer;
+			@include nav-transform($rotate(0deg));
+			@include nav-transition(.5s ease-in-out);
+
+			span {
+
+				display: block;
+				position: absolute;
+				height: 100px;
+				width: 100%;
+				background: #d3531a;
+				border-radius: 9px;
+				opacity: 1;
+				left: 0;
+				@include nav-transform($rotate(0deg));
+				@include nav-transition(.25s ease-in-out);
+
+				&:nth-child(1) {
+
+					top:0;
+					@include nav-transition-origin($origin);
+
+				}
+
+				&:nth-child(2) {
+
+					top:18px;
+					@include nav-transition-origin($origin);
+
+				}
+
+				&:nth-child(3) {
+
+					top:36px;
+					@include nav-transition-origin($origin);
+
+				}
+
+
+			}
+
+			&.open {
+
+				span {
+
+					&:nth-child(1) {
+
+						top:-3px;
+						left:8px;
+						@include nav-transform($rotate(45deg));
+
+					}
+
+					&:nth-child(2) {
+
+						width:0%;
+						opacity:0;
+
+					}
+
+					&:nth-child(3) {
+
+						top:39px;
+						left:8px;
+						@include nav-transform($rotate(-45deg));
+
+					}
+
+				}
+
+			}
+
 		}
 
 		h4 {

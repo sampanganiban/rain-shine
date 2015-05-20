@@ -1,8 +1,26 @@
-@mixin nav-rotate ($transform) {
+@mixin nav-transform ($rotate) {
 
-  -webkit-transform: rotate:$transform;
-  -moz-transform: rotate:$transform;
-  -o-transform: rotate:$transform;
-  transform: rotate:$transform;
+  -webkit-transform:$rotate;
+  -moz-transform:$rotate;
+  -o-transform:$rotate;
+  transform:$rotate;
+
+}
+
+@mixin nav-transition ($transition) {
+
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+
+}
+
+@mixin nav-transition-origin ($origin){
+
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  transform-origin: $origin;
 
 }
