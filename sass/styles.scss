@@ -6,10 +6,9 @@ $spacing:0;
 $bg-color: #222;
 $text-color: #eee;
 $mobile-height:480px;
-$rotate: rotate;
-$origin: right center;
 $title-font: Poiret one;
 $title-font-size:1.4em;
+$spacing2:.5em;
 
 body {
 	padding:$spacing;
@@ -95,12 +94,11 @@ nav {
   color: white;
 
   ul {
-	  // display: table-cell;
-	  // vertical-align: middle;
+
 	  left:300px;
+	
 	li { 
 
-		// text-align: center;
 		list-style:none;
 		padding-top:3em;
 		margin-top:1em;
@@ -131,7 +129,6 @@ nav {
 
 	h3 {
 
-		// border:1px solid #f09;
 		margin:$spacing;
 		padding:$spacing;
 		font-size:2em;
@@ -140,7 +137,6 @@ nav {
 
 	img {
 
-		// border:1px solid #f09;
 		margin:1em;
 		
 		}
@@ -150,38 +146,36 @@ nav {
 main {
 
 	text-align:center;
+	color:$text-color;
 
 	h2 {
 
+		border:1px solid #f09;
 		font-family: $title-font;
-		margin-top:.5em;
-		padding-top:.5em;
-
+		// margin-top:$spacing2;
+		padding-top:$spacing2;
 	}
 
 	h3 {
-// border:1px solid #f09;
+
 		font-family: $title-font;
 
 	}
 
-	#our-menu{
-		
-		background-color: $bg-color;
-
+	p {
+		border:1px solid #f09;
+		padding:$spacing2;
 	}
 
-
-
-	p {
-		padding:.5em;
-		
+	#our-menu {
+		background-color:$bg-color;
 	}
 
 
 	#location {
 
 		background-color:$bg-color;
+		margin-top:$spacing2;
 
 		#cafe-location {
 
@@ -190,7 +184,6 @@ main {
 		}
 
 		address {
-			// border:1px solid #f09;
 			padding-bottom:1em;
 			margin:$spacing;
 
@@ -200,23 +193,18 @@ main {
 
 	#contact {
 
-		height:$mobile-height;
-		background-color: $bg-color;
-		color:#eee;
-
-
+		background-color:$bg-color;
+		margin-top: $spacing2;
 	}
-
-
 	
-	}
+}
 
 
 footer {
 	background-color:$bg-color;
 	color:$text-color;
-	padding-top:.5em;
-	margin-top: .5em;
+	padding-top:$spacing2;
+	margin-top: $spacing2;
 	text-align:center;
 
 	img	{
