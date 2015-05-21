@@ -60,7 +60,9 @@
 
   	<div id="location">
 
-  	<h2>Our Location</h2>
+  	<div id="cafe-location"></div>
+
+	<h2>Our Location</h2>
 
   		<address>
   			<h4>Address:</h4>
@@ -82,6 +84,11 @@
   		<form>
 
   		<h2>Contact Us</h2>
+
+  		 <div>
+  			<p><strong>Phone:</strong> 04 123 456</p>
+  			<p><strong>Email:</strong> rainshine-cafe@gmail.com</p>	
+  		 </div>
   			
   		 <div>	
   			<label for="name">name</label>
@@ -97,6 +104,8 @@
 		   	<label for="message">message</label>
 		   	<input type="message" id="message" placeholder="Must be more than 100 characters">
 		   </div>
+
+		   <input type="submit" value="SEND">
 
   		</form>
   		
@@ -116,6 +125,8 @@
 
   </footer>
 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry"></script>
+<script src="js/location.js"></script>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="js/nav.js"></script>
 
