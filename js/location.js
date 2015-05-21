@@ -28,7 +28,7 @@ function cafeMap() {
 	var mapOptions = {
 
 		center:centerPoint,
-		zoom:15,
+		zoom:17,
 		mapTypeControl:false,
 		streetViewControl:false
 	}

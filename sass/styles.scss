@@ -33,27 +33,31 @@ header {
 
 		}
 
+}
 		#nav-icon4 {
 
-			width: 60px;
+			// border:1px solid #f09;
+			width: 35px;
   			height: 45px;
   			position: relative;
-  			// margin: 50px auto;
+  			margin: auto;
 			cursor: pointer;
-			@include nav-transform($rotate(0deg));
+			left:270px;
+			// top:-50px;
+			@include nav-transform-rotate(0deg);
 			@include nav-transition(.5s ease-in-out);
 
 			span {
 
 				display: block;
 				position: absolute;
-				height: 100px;
+				height: 3px;
 				width: 100%;
-				background: #d3531a;
+				background: #000;
 				border-radius: 9px;
 				opacity: 1;
-				left: 0;
-				@include nav-transform($rotate(0deg));
+				// left: 20px;
+				@include nav-transform-rotate(0deg);
 				@include nav-transition(.25s ease-in-out);
 
 				&:nth-child(1) {
@@ -65,14 +69,14 @@ header {
 
 				&:nth-child(2) {
 
-					top:18px;
+					top:10px;
 					@include nav-transition-origin($origin);
 
 				}
 
 				&:nth-child(3) {
 
-					top:36px;
+					top:20px;
 					@include nav-transition-origin($origin);
 
 				}
@@ -86,9 +90,9 @@ header {
 
 					&:nth-child(1) {
 
-						top:-3px;
-						left:8px;
-						@include nav-transform($rotate(45deg));
+						top:30px;
+						// left:20px;
+						@include nav-transform-rotate(45deg);
 
 					}
 
@@ -101,9 +105,9 @@ header {
 
 					&:nth-child(3) {
 
-						top:39px;
-						left:8px;
-						@include nav-transform($rotate(-45deg));
+						top:5px;
+						// left:20px;
+						@include nav-transform-rotate(-45deg);
 
 					}
 
@@ -131,7 +135,7 @@ header {
 			margin:1em;
 		}
 
-	}
+	
 
 	nav {
 
@@ -151,46 +155,37 @@ header {
 
 main {
 
-	#our-menu{
-		
-		background-color: $bg-color;
-		background-image: url('../img/dessert-two-two.jpg');
-		height:$mobile-height;
-		
-		h3 {
-			text-align:center;
-		}
-
-		p {
-			text-align: center;
-		}
-
-		div {
-			
-		}
-
-	}
-
+	text-align:center;
 
 	h2 {
 
-		margin:$spacing;
-		padding:$spacing;
-		// border:1px solid #f09;
+		margin-top:.5em;
+		padding-top:.5em;
 
 	}
 
-	p {
+	#our-menu{
+		
+		background-color: $bg-color;
 
-		margin:$spacing;
-		padding:$spacing;
+	}
+
+
+
+	p {
+		padding:.5em;
 	}
 
 
 	#location {
 
-		height:$mobile-height;
 		background-color:$bg-color;
+
+		#cafe-location {
+
+			height:250px;
+
+		}
 
 	}
 
@@ -211,6 +206,8 @@ footer {
 	background-color:$bg-color;
 	color:$text-color;
 	padding:.5em;
+	margin-top: .5em;
+	text-align:center;
 
 	img	{
 
