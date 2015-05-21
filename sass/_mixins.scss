@@ -1,9 +1,9 @@
-@mixin nav-transform ($rotate) {
+@mixin nav-transform-rotate ($rotate) {
 
-  -webkit-transform:$rotate;
-  -moz-transform:$rotate;
-  -o-transform:$rotate;
-  transform:$rotate;
+  -webkit-transform: rotate($rotate);
+  -moz-transform: rotate($rotate);
+  -o-transform: rotate($rotate);
+  transform: rotate($rotate);
 
 }
 
