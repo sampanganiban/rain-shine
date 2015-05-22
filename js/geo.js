@@ -11,10 +11,10 @@ window.onload = function () {
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var map;
-var userLocation;
-var cafeLocation;
+var hereIsTheUser;
+var hereIsTheCafe;
 
-function cafe() {
+function cafeLocation() {
 
   // Find the map container
   var mapContainer = document.getElementById('cafe-location');
@@ -24,7 +24,8 @@ function cafe() {
 
     title:"Rain & Shine Cafe",
     lat:-41.284933, 
-    lng:174.779289
+    lng:174.779289,
+    icon: ''
 
   }
 
@@ -32,7 +33,7 @@ function cafe() {
   var centerPoint = new google.maps.LatLng(cafe.lat, cafe.lng);
 
   // Save the location of the cafe
-  cafeLocation = centerPoint;
+  hereIsTheCafe = centerPoint;
 
   var mapOptions = {
 
@@ -57,7 +58,7 @@ function cafe() {
 
 }
 
-function user() {
+function userLocation() {
 
   if (navigator.geolocation) {
 
@@ -68,7 +69,7 @@ function user() {
     var latLng = new google.maps.LatLng (userLocation.coords.latitude, userLocation.coords.longitude);
 
     // Save the location of the user
-    userLocation = latLng;
+    hereIsTheUser = latLng;
 
     var userMarker = new google.maps.Marker ({
       position:latLng,
@@ -80,7 +81,7 @@ function user() {
 
     map.panTo(latLng);
 
-    calcRoute();
+     calcRoute();
 
     });
 
@@ -97,8 +98,8 @@ function initialize() {
 
 function calcRoute() {
   var request = {
-      origin: userLocation,
-      destination: cafeLocation,
+      origin: hereIsTheUser,
+      destination: hereIsTheCafe,
       travelMode: google.maps.TravelMode.WALKING
   };
   directionsService.route(request, function(response, status) {

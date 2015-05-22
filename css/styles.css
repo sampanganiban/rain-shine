@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: avenir next;
-  color: #eee;
+  color: #eeeeee;
   font-size: 1.2em;
 }
 body h2 {
@@ -36,7 +36,7 @@ header .bar3 {
   width: 100%;
   height: 8px;
   margin-bottom: 5px;
-  background-color: #eee;
+  background-color: #eeeeee;
   transition: all 0.3s ease-in-out;
 }
 header .navbar-on .bar1,
@@ -83,8 +83,8 @@ header nav ul li {
 header nav ul li a {
   border-radius: 5px;
   text-decoration: none;
-  background-color: #eee;
-  color: #222;
+  background-color: #eeeeee;
+  color: #222222;
   padding: 1em;
 }
 header .nav-hide {
@@ -105,10 +105,9 @@ header img {
 
 main {
   text-align: center;
-  color: #eee;
+  color: #eeeeee;
 }
 main h2 {
-  border: 1px solid #f09;
   font-family: Poiret one;
   padding-top: 0.5em;
 }
@@ -116,14 +115,13 @@ main h3 {
   font-family: Poiret one;
 }
 main p {
-  border: 1px solid #f09;
   padding: 0.5em;
 }
 main #our-menu {
-  background-color: #222;
+  background-color: #222222;
 }
 main #location {
-  background-color: #222;
+  background-color: #222222;
   margin-top: 0.5em;
 }
 main #location #cafe-location {
@@ -134,13 +132,13 @@ main #location address {
   margin: 0;
 }
 main #contact {
-  background-color: #222;
+  background-color: #222222;
   margin-top: 0.5em;
 }
 
 footer {
-  background-color: #222;
-  color: #eee;
+  background-color: #222222;
+  color: #eeeeee;
   padding-top: 0.5em;
   margin-top: 0.5em;
   text-align: center;
