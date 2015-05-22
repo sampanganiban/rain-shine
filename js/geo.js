@@ -90,7 +90,9 @@ function userLocation() {
 }
 
 function initialize() {
-  directionsDisplay = new google.maps.DirectionsRenderer();
+
+ DirectionsRendererOptions({suppressMarker: true;})
+ directionsDisplay = new google.maps.DirectionsRenderer();
  directionsDisplay.setMap(map);
 }
 
@@ -110,7 +112,8 @@ function calcRoute() {
 }
 
 
-
+// CODE TO REMOVE THE DEFAULT ROUTE MARKERS
+// https://developers.google.com/maps/documentation/javascript/reference#DirectionsRendererOptions
 
 
 
