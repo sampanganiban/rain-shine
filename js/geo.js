@@ -90,8 +90,6 @@ function userLocation() {
 }
 
 function initialize() {
-
- DirectionsRendererOptions({suppressMarker: true;})
  directionsDisplay = new google.maps.DirectionsRenderer();
  directionsDisplay.setMap(map);
 }

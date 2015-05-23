@@ -3,30 +3,29 @@ body {
   margin: 0;
   font-family: avenir next;
   color: #eee;
-  font-size: 1.2em;
 }
 body h2 {
-  font-family: Poiret one;
+  font-family: Poiret one, sans-serif;
   font-size: 1.4em;
 }
 
 header #opening-page {
-  font-family: Poiret one;
+  font-family: Poiret one, sans-serif;
   color: white;
   height: 480px;
   background-image: url("../img/interior-two.gif");
   background-repeat: no-repeat;
 }
 header #opening-page #opening-title {
-  padding-top: 6.5em;
+  padding-top: 7em;
   text-align: center;
 }
 header .navbar-toggle {
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 100px;
   z-index: 20;
   cursor: pointer;
 }
@@ -108,11 +107,11 @@ main {
   color: #eee;
 }
 main h2 {
-  font-family: Poiret one;
+  font-family: Poiret one, sans-serif;
   padding-top: 0.5em;
 }
 main h3 {
-  font-family: Poiret one;
+  font-family: Poiret one, sans-serif;
 }
 main p {
   margin: 0;

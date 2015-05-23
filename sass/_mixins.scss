@@ -24,3 +24,26 @@
   transform-origin: $origin;
 
 }
+
+
+@mixin breakpoint( $device ) {
+  // Widescreen
+  @if $device == wide {
+    // Media query for widescreen devices
+    @media all and ( min-width: 1200px ) { @content; }
+  }
+  // Regular desktop
+  @else if $device == desktop {
+    // Desktop media query
+    @media all and ( min-width: 960px ) { @content; }
+  }
+  // Tablet
+  @else if $device == tablet {
+    // Media query for tablets
+    @media all and ( min-width: 800px ) { @content; }
+  }
+  // Smaller
+  @else if $device == smaller {
+    @media all and ( min-width: 550px ) { @content; }
+  }
+}
