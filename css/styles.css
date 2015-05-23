@@ -135,6 +135,21 @@ main #contact {
   background-color: #222;
   margin-top: 0.5em;
 }
+main #contact input,
+main #contact textarea {
+  font-family: avenir next;
+  margin: 0.5em;
+  width: 75%;
+  display: inline;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #eee;
+  padding: 0.5em;
+  font-size: 1em;
+}
+main #contact #submit {
+  margin-bottom: 2em;
+}
 
 footer {
   background-color: #222;
