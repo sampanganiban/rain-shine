@@ -20,6 +20,15 @@ header #opening-page #opening-title {
   padding-top: 7em;
   text-align: center;
 }
+@media all and (min-width: 550px) {
+  header #opening-page img {
+    width: 10%;
+  }
+  header #opening-page #opening-title {
+    font-size: 1.6em;
+    padding-top: 4em;
+  }
+}
 header .navbar-toggle {
   position: fixed;
   top: 20px;
@@ -96,7 +105,7 @@ header h4 {
 header h3 {
   margin: 0;
   padding: 0;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 header img {
   margin: 1em;
@@ -107,6 +116,7 @@ main {
   color: #eee;
 }
 main h2 {
+  font-size: 1.5em;
   font-family: Poiret one, sans-serif;
   padding-top: 0.5em;
 }
@@ -120,23 +130,49 @@ main p {
 main #our-menu {
   background-color: #222;
 }
-main #location {
+main #our-menu:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+main #our-menu div {
+  padding: .5em 0 .5em 0;
+  width: 33%;
+  float: left;
+}
+
+#location {
   background-color: #222;
   margin-top: 0.5em;
 }
-main #location #cafe-location {
+#location #cafe-location {
   height: 250px;
 }
-main #location address {
+#location address {
   padding-bottom: 1em;
   margin: 0;
 }
-main #contact {
+@media all and (min-width: 550px) {
+  #location #address {
+    text-align: center;
+  }
+  #location #address:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  #location address {
+    float: left;
+    width: 50%;
+  }
+}
+
+#contact {
   background-color: #222;
   margin-top: 0.5em;
 }
-main #contact input,
-main #contact textarea {
+#contact input,
+#contact textarea {
   font-family: avenir next;
   margin: 0.5em;
   width: 75%;
@@ -147,7 +183,15 @@ main #contact textarea {
   padding: 0.5em;
   font-size: 1em;
 }
-main #contact #submit {
+#contact textarea {
+  height: 100px;
+}
+#contact .danger {
+  border-radius: 3px;
+  background-color: #ccc;
+  color: red;
+}
+#contact #submit {
   margin-bottom: 2em;
 }
 

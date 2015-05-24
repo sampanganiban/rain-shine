@@ -1,13 +1,6 @@
 @import 'mixins';
+@import 'variables';
 
-$main-font:avenir next;
-$spacing:0;
-$bg-color: #222;
-$text-color: #eee;
-$mobile-height:480px;
-$title-font: Poiret one, sans-serif;
-$title-font-size:1.4em;
-$spacing2:.5em;
 
 body {
 	padding:$spacing;
@@ -39,8 +32,24 @@ header {
 			padding-top:7em;
 			// border:1px solid #f09;
 			text-align:center;
+	}
+
+	@include breakpoint (smaller) {
+
+		img {
+
+			width:10%;
 
 		}
+
+		#opening-title {
+
+			font-size:$tablet-title-size;
+			padding-top:4em; 
+
+		}
+
+	}
 
 }
 
@@ -137,7 +146,7 @@ nav {
 
 		margin:$spacing;
 		padding:$spacing;
-		font-size:2em;
+		font-size:2.5em;
 
 	}
 
@@ -156,9 +165,9 @@ main {
 
 	h2 {
 
+		font-size:1.5em;
 		font-family: $title-font;
 		padding-top:$spacing2;
-		// margin-top:$spacing;
 	}
 
 	h3 {
@@ -174,6 +183,43 @@ main {
 
 	#our-menu {
 		background-color:$bg-color;
+	}
+
+	// @include breakpoint (smaller) {
+
+
+	// 	}
+
+	// @include breakpoint (tablet) {
+
+
+
+
+	// }
+
+		#our-menu {
+
+			
+
+			&:after {
+				
+				content:'';
+				display:table;
+				clear:both
+				
+				}
+
+
+			div {
+				
+				padding:.5em 0 .5em 0;
+				width:33%;
+				float:left;
+
+			}
+
+		}
+
 	}
 
 
@@ -194,7 +240,32 @@ main {
 
 		}
 
-	}
+		@include breakpoint (smaller) {
+
+			#address {
+
+				text-align:center;
+				
+				&:after {
+
+					content:'';
+					display:table;
+					clear:both
+
+				}
+
+			}
+
+			address {
+
+				float:left;
+				width:50%;
+
+				}
+
+
+			}
+		}
 
 	#contact {
 
@@ -216,15 +287,25 @@ main {
 
 		}
 
+		textarea {
+
+			height:100px;
+
+		}
+
+		.danger { 
+			border-radius: 3px;
+			background-color: #ccc;
+			color:red;
+		}
+
+
 		#submit {
-			
 			
 			margin-bottom:2em;
 
 		}
 
-	}
-	
 }
 
 

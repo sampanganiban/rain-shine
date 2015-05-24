@@ -39,7 +39,7 @@
 		</nav>
   </header>
 
-  <main>
+ <main>
   	<div id="our-menu">
   		<h2>OUR MENU</h2>
 	  		<div>
@@ -68,21 +68,19 @@
   	
   	<div id="cafe-location" onchange="calcRoute(); "></div>
 
-	
-
+  	<div id="address">
   		<address>
   			<h4>Address:</h4>
   			12 Queens Wharf<br>
-  				Wellington<br>
-  			 New Zealand<br>
-
+  		Wellington, New Zealand<br>
   		</address>
 
-  		<address>
+  		<address id="opening">
   			<h4>Opening hours:</h4>
   			Mon - Fri 9:00am - 5:00pm<br>
   			Weekends 9:00am - 4:00pm<br>
   		</address>
+  	</div>
   		
   	</div>
 
@@ -96,20 +94,20 @@
   			<p><strong>Phone:</strong> 04 123 456</p>
   			<p><strong>Email:</strong> rainshine-cafe@gmail.com</p>	
   		 </div>
-  			
-  		<div> 
-		    <input id="firstname" name="firstname" type="text"  required class="fv-minlength-2" placeholder="name">
-		    <div id="firstname-error"></div>
+
+  		<div id="form-group">	
+		    <input type="text" id="name" name="name"  class="fv-minlength-2" placeholder="name" required>
+		    <div id="name-error" class="danger">
 		</div>
   		   
 		 <div class="form-group">
-		    <input id="email" name="email" type="email" required placeholder="email" >
-		    <div id="email-error"></div>
+		    <input type="email" id="email" name="email"  placeholder="email" required>
+		    <div id="email-error" class="danger"></div>
   		 </div>
 
 		 <div class="form-group">
-			<textarea id="message" name="message" rows="5" cols="60" required minlength="10" placeholder="message"></textarea>
-			<span id="message-error"></span>
+			<textarea id="message" name="message" placeholder="message" required></textarea>
+			<div id="message-error" class="danger"></sdiv>
 		 </div>
 
 		 <input type="submit" value="CONTACT US" id="submit">
@@ -137,7 +135,7 @@
 <script src="js/full-page-nav.js"></script>
 <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script src="js/geo.js"></script> -->
-<script src="form-validation-kit.js"></script>
+<script src="js/form-validation-kit.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
