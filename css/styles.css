@@ -6,7 +6,7 @@ body {
 }
 body h2 {
   font-family: Poiret one, sans-serif;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 header #opening-page {
@@ -20,12 +20,12 @@ header #opening-page #opening-title {
   padding-top: 7em;
   text-align: center;
 }
-@media all and (min-width: 550px) {
+@media all and (min-width: 540px) {
   header #opening-page img {
-    width: 10%;
+    width: 60px;
   }
   header #opening-page #opening-title {
-    font-size: 1.6em;
+    font-size: 1.2em;
     padding-top: 4em;
   }
 }
@@ -110,6 +110,11 @@ header h3 {
 header img {
   margin: 1em;
 }
+@media all and (min-width: 960px) {
+  header .nav-hide {
+    display: inline-block;
+  }
+}
 
 main {
   text-align: center;
@@ -119,6 +124,7 @@ main h2 {
   font-size: 1.5em;
   font-family: Poiret one, sans-serif;
   padding-top: 0.5em;
+  margin: 0.5em;
 }
 main h3 {
   font-family: Poiret one, sans-serif;
@@ -129,41 +135,62 @@ main p {
 }
 main #our-menu {
   background-color: #222;
+  margin-top: 0.5em;
 }
-main #our-menu:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-main #our-menu div {
-  padding: .5em 0 .5em 0;
-  width: 33%;
-  float: left;
-}
-
-#location {
+main #location {
   background-color: #222;
   margin-top: 0.5em;
 }
-#location #cafe-location {
+main #location #cafe-location {
   height: 250px;
 }
-#location address {
+main #location address {
   padding-bottom: 1em;
   margin: 0;
 }
-@media all and (min-width: 550px) {
-  #location #address {
-    text-align: center;
+@media all and (min-width: 540px) {
+  main h2 {
+    font-size: 2em;
   }
-  #location #address:after {
+  main #our-menu:after {
     content: '';
     display: table;
     clear: both;
   }
-  #location address {
+  main #our-menu div {
+    padding: .3px;
+    padding-top: 2em;
+    width: 32.5%;
+    height: 300px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 1em 1px 10px 1px;
+  }
+  main #address {
+    text-align: center;
+  }
+  main #address:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  main #address address {
     float: left;
     width: 50%;
+  }
+}
+@media all and (min-width: 800px) {
+  main #our-menu div {
+    width: 31%;
+    padding: .5em;
+    padding-top: 2em;
+    margin: 15px 1px 1em 1px;
+    margin-bottom: .5em;
+  }
+}
+@media all and (min-width: 960px) {
+  main #our-menu div {
+    width: 31.4%;
   }
 }
 
@@ -194,6 +221,12 @@ main #our-menu div {
 #contact #submit {
   margin-bottom: 2em;
 }
+@media all and (min-width: 540px) {
+  #contact input,
+  #contact textarea {
+    max-width: 400px;
+  }
+}
 
 footer {
   background-color: #222;
@@ -201,6 +234,9 @@ footer {
   padding-top: 0.5em;
   margin-top: 0.5em;
   text-align: center;
+}
+footer h2 {
+  font-size: 1.5em;
 }
 footer ul {
   padding: 0;
@@ -214,4 +250,13 @@ footer li {
 footer img {
   padding: 0;
   margin: 0;
+  width: 45px;
+}
+@media all and (min-width: 540px) {
+  footer h2 {
+    font-size: 2em;
+  }
+  footer img {
+    max-width: 70px;
+  }
 }

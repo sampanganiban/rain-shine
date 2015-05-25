@@ -27,10 +27,7 @@ header {
 
 		#opening-title {
 			
-			// font-size:3em;
-			// padding-bottom: 7em;
 			padding-top:7em;
-			// border:1px solid #f09;
 			text-align:center;
 	}
 
@@ -38,13 +35,13 @@ header {
 
 		img {
 
-			width:10%;
+			width:60px;
 
 		}
 
 		#opening-title {
 
-			font-size:$tablet-title-size;
+			font-size:$smaller-title-size;
 			padding-top:4em; 
 
 		}
@@ -61,8 +58,6 @@ header {
 	  height: 100px;
 	  z-index: 20;
 	  cursor: pointer;
-	  // border:1px solid #f09;
-
 }
 
 	.bar1,
@@ -155,6 +150,16 @@ nav {
 		margin:1em;
 		
 	}
+
+	@include breakpoint (desktop) {
+
+		.nav-hide {
+
+			display:inline-block;
+
+		}
+
+	}
 		
 }
 
@@ -168,6 +173,7 @@ main {
 		font-size:1.5em;
 		font-family: $title-font;
 		padding-top:$spacing2;
+		margin:$spacing2;
 	}
 
 	h3 {
@@ -183,45 +189,8 @@ main {
 
 	#our-menu {
 		background-color:$bg-color;
+		margin-top: $spacing2;
 	}
-
-	// @include breakpoint (smaller) {
-
-
-	// 	}
-
-	// @include breakpoint (tablet) {
-
-
-
-
-	// }
-
-		#our-menu {
-
-			
-
-			&:after {
-				
-				content:'';
-				display:table;
-				clear:both
-				
-				}
-
-
-			div {
-				
-				padding:.5em 0 .5em 0;
-				width:33%;
-				float:left;
-
-			}
-
-		}
-
-	}
-
 
 	#location {
 
@@ -239,9 +208,43 @@ main {
 			margin:$spacing;
 
 		}
+	}
 
 		@include breakpoint (smaller) {
+			
+			h2 {
 
+				font-size:$smaller-maintitle-size;
+
+			}
+
+			#our-menu {
+
+
+					&:after {
+						
+						content:'';
+						display:table;
+						clear:both
+						
+						}
+
+
+					div {
+						
+						padding: .3px;
+						padding-top:2em;
+						width:32.5%;
+						height:300px;
+						float:left;
+						background-color: rgba(255,255,255,.2);
+						margin:1em 1px 10px 1px;
+						// border:1px solid #f09;
+
+					}
+
+				}
+				
 			#address {
 
 				text-align:center;
@@ -254,7 +257,7 @@ main {
 
 				}
 
-			}
+			
 
 			address {
 
@@ -262,10 +265,45 @@ main {
 				width:50%;
 
 				}
+			}
+
+		}
+
+		@include breakpoint (tablet) {
+
+			#our-menu {
+
+
+				div {
+
+					width:31%;
+					padding:.5em;
+					padding-top:2em;
+					margin:15px 1px 1em 1px;
+					margin-bottom:.5em;
+				}
 
 
 			}
+
 		}
+
+		@include breakpoint (desktop) {
+
+			#our-menu {
+
+
+				div {
+
+					width:31.4%;
+
+				}
+
+			}
+
+		}
+	
+}
 
 	#contact {
 
@@ -306,6 +344,19 @@ main {
 
 		}
 
+		@include breakpoint (smaller) {
+
+			input,
+			textarea {
+
+				max-width:400px;
+
+			}
+
+		}
+
+
+
 }
 
 
@@ -315,6 +366,10 @@ footer {
 	padding-top:$spacing2;
 	margin-top: $spacing2;
 	text-align:center;
+
+	h2 {
+		font-size: 1.5em;
+	}
 
 	ul {
 
@@ -331,5 +386,22 @@ footer {
 	img	{
 		padding:$spacing;
 		margin:$spacing;
+		width:45px;
 	}
+
+	@include breakpoint (smaller) {
+
+		h2 {
+
+			font-size: $smaller-maintitle-size;
+		}
+
+		img {
+
+			max-width:70px;
+
+		}
+
+	}
+
 }
