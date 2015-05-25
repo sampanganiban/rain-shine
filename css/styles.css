@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: avenir next;
-  color: #eee;
+  color: #eeeeee;
 }
 body h2 {
   font-family: Poiret one, sans-serif;
@@ -44,7 +44,7 @@ header .bar3 {
   width: 100%;
   height: 8px;
   margin-bottom: 5px;
-  background-color: #eee;
+  background-color: #eeeeee;
   transition: all 0.3s ease-in-out;
 }
 header .navbar-on .bar1,
@@ -91,8 +91,8 @@ header nav ul li {
 header nav ul li a {
   border-radius: 5px;
   text-decoration: none;
-  background-color: #eee;
-  color: #222;
+  background-color: #eeeeee;
+  color: #222222;
   padding: 1em;
 }
 header .nav-hide {
@@ -111,14 +111,45 @@ header img {
   margin: 1em;
 }
 @media all and (min-width: 960px) {
+  header .navbar-toggle {
+    display: none;
+  }
   header .nav-hide {
+    position: absolute;
+    width: 50%;
+    height: 70px;
     display: inline-block;
+    right: 0;
+  }
+  header .nav-hide ul {
+    padding: 0;
+    padding-top: .5em;
+    margin: 0;
+    left: 0;
+    text-align: center;
+  }
+  header .nav-hide ul li {
+    border: 1px solid #f23;
+    width: 25%;
+    padding-top: 8em;
+    display: inline;
+  }
+  header .nav-hide ul li a {
+    padding: 1.3em;
+    margin: 0;
+    background-color: inherit;
+    color: #eeeeee;
+    width: 70px;
+  }
+  header .nav-hide ul li a:hover {
+    background-color: #eeeeee;
+    color: #222222;
   }
 }
 
 main {
   text-align: center;
-  color: #eee;
+  color: #eeeeee;
 }
 main h2 {
   font-size: 1.5em;
@@ -133,12 +164,15 @@ main p {
   margin: 0;
   padding: 0.5em;
 }
+main a {
+  color: #eeeeee;
+}
 main #our-menu {
-  background-color: #222;
   margin-top: 0.5em;
+  background-image: url("../img/dessert-two-two.jpg");
 }
 main #location {
-  background-color: #222;
+  background-color: #222222;
   margin-top: 0.5em;
 }
 main #location #cafe-location {
@@ -163,7 +197,7 @@ main #location address {
     width: 32.5%;
     height: 300px;
     float: left;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     margin: 1em 1px 10px 1px;
   }
   main #address {
@@ -195,7 +229,7 @@ main #location address {
 }
 
 #contact {
-  background-color: #222;
+  background-color: #222222;
   margin-top: 0.5em;
 }
 #contact input,
@@ -206,7 +240,7 @@ main #location address {
   display: inline;
   border: none;
   background-color: rgba(255, 255, 255, 0.4);
-  color: #eee;
+  color: #eeeeee;
   padding: 0.5em;
   font-size: 1em;
 }
@@ -229,8 +263,8 @@ main #location address {
 }
 
 footer {
-  background-color: #222;
-  color: #eee;
+  background-color: #222222;
+  color: #eeeeee;
   padding-top: 0.5em;
   margin-top: 0.5em;
   text-align: center;

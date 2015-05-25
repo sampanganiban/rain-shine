@@ -153,10 +153,56 @@ nav {
 
 	@include breakpoint (desktop) {
 
+		.navbar-toggle {
+
+			display:none;
+		}
+
 		.nav-hide {
 
+			position:absolute;
+			width:50%;
+			height:70px;
 			display:inline-block;
+			right:0;
 
+			ul {
+				padding:$spacing;
+				padding-top:.5em;
+				margin:$spacing;
+				left:0;
+				text-align: center;
+				
+
+				li {
+					
+					border:1px solid #f23;
+					width:25%;
+					// margin:$spacing;
+					padding-top:8em;
+					display:inline;
+
+					a {
+
+						// border:1px solid #f09;
+						padding:1.3em;
+						margin:$spacing;
+						background-color:inherit;
+						color:$text-color;
+						width:70px;
+						
+					
+					&:hover {
+
+						background-color:$text-color;
+						color:$bg-color;
+						// padding:.5em;
+
+						}	
+					
+					}
+				}
+			}
 		}
 
 	}
@@ -187,9 +233,15 @@ main {
 		padding:$spacing2;
 	}
 
+	a {
+
+		color:$text-color;
+
+	}
+
 	#our-menu {
-		background-color:$bg-color;
 		margin-top: $spacing2;
+		background-image:url('../img/dessert-two-two.jpg');
 	}
 
 	#location {
@@ -237,7 +289,7 @@ main {
 						width:32.5%;
 						height:300px;
 						float:left;
-						background-color: rgba(255,255,255,.2);
+						background-color: rgba(255,255,255,.1);
 						margin:1em 1px 10px 1px;
 						// border:1px solid #f09;
 
