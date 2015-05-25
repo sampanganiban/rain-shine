@@ -161,7 +161,7 @@ nav {
 		.nav-hide {
 
 			position:absolute;
-			width:50%;
+			width:70%;
 			height:70px;
 			display:inline-block;
 			right:0;
@@ -172,24 +172,24 @@ nav {
 				margin:$spacing;
 				left:0;
 				text-align: center;
-				
+				// border:1px solid #435;
 
 				li {
 					
 					border:1px solid #f23;
-					width:25%;
+					width:20%;
 					// margin:$spacing;
-					padding-top:8em;
-					display:inline;
+					padding-top:$spacing;
+					display:inline-block;
 
 					a {
 
-						// border:1px solid #f09;
+						border:1px solid #f09;
 						padding:1.3em;
 						margin:$spacing;
 						background-color:inherit;
 						color:$text-color;
-						width:70px;
+						width:20%;
 						
 					
 					&:hover {
